@@ -1,0 +1,44 @@
+backend:
+  name: github
+  repo: backlands/shadows-of-hope
+
+media_folder: 'assets/images/uploads'
+media_library:
+  name: uploadcare
+
+collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Homepage"
+        name: "home"
+        file: "index.md"
+        fields:
+          - {label: "Body", name: "body", widget: "markdown"}
+  - name: posts
+    identifier_field: name
+    folder: "_posts"
+    create: true
+    fields:
+      - label: "Title"
+        name: "title"
+        required: true
+        pattern: [
+          '^(\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])).{5,}$',
+          '"YYYY-MM-DD Your title"'
+        ]
+        hint: "In the format '2016-03-24 Extended Title of Post'"
+        widget: "string"
+      - label: "Date"
+        name: "date"
+        widget: 'datetime'
+        format: 'YYYY-MM-DD hh:mm:ss ZZ'
+      - label: "Categories"
+        name: "categories"
+        hint: "Space separated list of categories."
+        widget: "string"
+        required: false
+      - { label: "Body", name: "body", widget: "markdown" }
+    label: Blog Post
+
+site_url: https://backlands.github.io/shadows-of-hope/

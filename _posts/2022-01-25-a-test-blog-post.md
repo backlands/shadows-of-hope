@@ -1,4 +1,5 @@
 ---
+title: A Test Blog Post
 ---
 
 # This is a blog post
