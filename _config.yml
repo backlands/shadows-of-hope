@@ -1,0 +1,24 @@
+# SEO Values
+title: Shadows of Hope
+tagline: Game nights, not pain nights ...
+description: What are we playing tonight? 😂
+url: https://backlands.github.io/shadows-of-hope/
+logo: https://draculatheme.com/static/icons/pack-1/045-dracula.svg
+titles_from_headings:
+  enabled: false
+
+# GitHub Values
+github:
+  owner_name: backlands
+  owner_url: https://github.com/backlands
+  repository_url: https://github.com/backlands/shadows-of-hope
+
+show_downloads: false
+show_header: false
+remote_theme: "dracula/gh-pages"
+
+sass:
+    style: compressed
+
+plugins:
+  - jekyll-seo-tag
