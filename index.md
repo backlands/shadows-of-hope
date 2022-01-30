@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
+### Hello Fellow Humans,
 
-### Hi Friends
-
-We will try to update this with some useful information of sorts. Have fun gaming otherwise!
+This page will be updated with something resembling that which is known as useful and information. There is no time frame for this.
