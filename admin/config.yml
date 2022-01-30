@@ -18,6 +18,7 @@ collections:
   - name: posts
     identifier_field: name
     folder: "_posts"
+    extension: "md"
     create: true
     fields:
       - label: "Title"
