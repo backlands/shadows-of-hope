@@ -1,6 +1,6 @@
 ---
 title: Servers
-path: servers
+path: ""
 ---
 ## TeamSpeak
 
