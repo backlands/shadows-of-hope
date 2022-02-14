@@ -23,3 +23,9 @@ sass:
 
 plugins:
   - jekyll-seo-tag
+
+# Custom pages collection
+collections:
+  pages:
+    permalink: "/:path/"
+    output: true
