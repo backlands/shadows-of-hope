@@ -1,6 +1,7 @@
 ---
 title: Servers
 path: ""
+layout: default
 ---
 ## TeamSpeak
 

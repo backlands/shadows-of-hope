@@ -11,16 +11,10 @@ collections:
     label: "Page"
     folder: "_pages/"
     create: true
-    path: '{{path}}/{{slug}}'
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - label: "Directory Path"
-        name: "path"
-        required: false
-        default: ""
-        hint: "Custom relative path for where to save the page, exclude leading and trailing slash."
-        widget: "string"
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
   - name: posts
     identifier_field: name
     folder: "_posts"
@@ -46,6 +40,7 @@ collections:
         widget: "string"
         required: false
       - { label: "Body", name: "body", widget: "markdown" }
+      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
     label: Blog Post
   - label: "Content"
     name: "content"
