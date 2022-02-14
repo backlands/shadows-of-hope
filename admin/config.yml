@@ -7,14 +7,20 @@ media_library:
   name: uploadcare
 
 collections:
-  - label: "Pages"
-    name: "pages"
-    files:
-      - label: "Homepage"
-        name: "home"
-        file: "index.md"
-        fields:
-          - {label: "Body", name: "body", widget: "markdown"}
+  - name: "pages"
+    label: "Page"
+    folder: "_pages/"
+    create: true
+    path: '{{path}}/{{slug}}'
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - label: "Directory Path"
+        name: "path"
+        required: false
+        default: ""
+        hint: "Custom relative path for where to save the page, exclude leading and trailing slash."
+        widget: "string"
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: posts
     identifier_field: name
     folder: "_posts"
@@ -41,5 +47,14 @@ collections:
         required: false
       - { label: "Body", name: "body", widget: "markdown" }
     label: Blog Post
+  - label: "Content"
+    name: "content"
+    files:
+      - label: "Homepage"
+        name: "home"
+        file: "index.md"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+
 
 site_url: https://backlands.github.io/shadows-of-hope/
